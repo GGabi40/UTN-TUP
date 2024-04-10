@@ -6,13 +6,12 @@
 
 void main()
 {
-    int horasTrabajadas;
-    double valorDeLaHora, sueldo;
+    double valorDeLaHora, sueldo, horasTrabajadas;
 
     valorDeLaHora = 800.00;
 
     printf("\nIngresá la cantidad de horas trabajadas: ");
-    scanf("%d", &horasTrabajadas);
+    scanf("%f", &horasTrabajadas);
 
     sueldo = horasTrabajadas * valorDeLaHora;
 
