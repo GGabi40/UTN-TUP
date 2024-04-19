@@ -6,6 +6,7 @@
 
 void main()
 {
+    double valorDeLaHora, sueldo;
     float horasTrabajadas;
     double valorDeLaHora, sueldo;
 
