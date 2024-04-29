@@ -27,13 +27,11 @@ Seleccione una operación
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 int main()
 {
     float num1, num2;
     int opcion, contador_operaciones = 0;
-    bool cero = false;
 
     printf("Ingrese el primer numero: \n");
     scanf("%f", &num1);
