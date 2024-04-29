@@ -24,3 +24,60 @@ El menú que se mostrará al usuario quedará entonces de la siguiente forma:
 6. Salir
 Seleccione una operación
  */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    float num1, num2;
+    int opcion, contador_operaciones = 0;
+
+    printf("Ingrese el primer numero: \n");
+    scanf("%f", &num1);
+    printf("Ingrese el segundo numero: \n");
+    scanf("%f", &num2);
+
+    do
+    {
+        printf("\nmenu\n");
+        printf("Ingrese la operacion que desea realizar: \n");
+        printf("1. Suma \n");
+        printf("2. Resta \n");
+        printf("3. Multiplicacion \n");
+        printf("4. Division \n");
+        printf("5. Cantidad de operaciones realizadas\n");
+        printf("6. Salir \n");
+        scanf("%d", &opcion);
+        switch (opcion)
+        {
+        case 1:
+            printf("\nLa suma es: %.2f\n", num1 + num2);
+            contador_operaciones++;
+            break;
+        case 2:
+            printf("\nLa resta es: %.2f\n", num1 - num2);
+            contador_operaciones++;
+            break;
+        case 3:
+            printf("\nLa multiplicacion es: %.2f\n", num1 * num2);
+            contador_operaciones++;
+            break;
+        case 4:
+            printf("\nLa division es: %.2f\n", num1 / num2);
+            contador_operaciones++;
+            break;
+        case 5:
+            printf("\nLa cantidad de operaciones realizadas es: %d\n", contador_operaciones);
+            break;
+        case 6:
+            break;
+        default:
+            printf("Opcion invalida\n");
+            break;
+        }
+    } while (opcion < 6);
+
+    return 0;
+}

@@ -12,29 +12,6 @@ el 2,5% de la suma de sus ventas.
  */
 
 #include <stdio.h>
-#include <stdlib.h>
-
-void main()
-{
-    int fin, vendedores, i;
-    float importe_venta, comision, ventas;
-
-    vendedores = 5;
-    comision = 0.025;
-
-    for (i = 1; i <= vendedores; i++)
-    {
-        do
-        {
-
-        } while (fin != 0);
-    }
-
-    printf("Salis del bucle");
-}
-
-/* 
-#include <stdio.h>
 
 int main() {
     char vendedor = 'A';
@@ -63,9 +40,5 @@ int main() {
     } while (vendedor <= 'E'); // Mientras no se hayan procesado todos los vendedores
 
     return 0;
+
 }
- */
-
-/* 
-
- */
