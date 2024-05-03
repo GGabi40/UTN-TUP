@@ -30,7 +30,6 @@ Seleccione una operación
 
 int main()
 {
-
     float num1, num2;
     int opcion, contador_operaciones = 0;
 
@@ -65,8 +64,12 @@ int main()
             contador_operaciones++;
             break;
         case 4:
-            printf("\nLa division es: %.2f\n", num1 / num2);
-            contador_operaciones++;
+            if (num2 != 0) {
+                printf("\nLa division es: %.2f\n", num1 / num2);
+                contador_operaciones++;
+            } else {
+                printf("\nInválido.\n");
+            }
             break;
         case 5:
             printf("\nLa cantidad de operaciones realizadas es: %d\n", contador_operaciones);
