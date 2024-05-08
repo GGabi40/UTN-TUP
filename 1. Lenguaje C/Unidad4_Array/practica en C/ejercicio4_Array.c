@@ -24,7 +24,7 @@ int main()
         // Informar el mayor número
         if (i == 0) {
             mayor_numero = matriz[i];
-        } else if (mayor_numero > matriz[i]) {
+        } else if (mayor_numero < matriz[i]) {
             mayor_numero = matriz[i];
         }
         
