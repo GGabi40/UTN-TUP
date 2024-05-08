@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "1.ejercicio1.C": "cpp"
+        "*.ejs": "html",
+        "1.ejercicio1.C": "cpp",
+        "stdio.h": "c"
     }
 }
