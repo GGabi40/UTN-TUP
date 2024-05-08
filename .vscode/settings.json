@@ -2,6 +2,7 @@
     "files.associations": {
         "*.ejs": "html",
         "1.ejercicio1.C": "cpp",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "stdlib.h": "c"
     }
 }
