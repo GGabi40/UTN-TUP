@@ -40,10 +40,14 @@ void main()
     }
 
 
+    // Preguntar al usuario
     char nombreUsuario[50];
 
     printf("Ingrese su nombre: \n");
     scanf("%s", nombreUsuario); // <- sin & // no permite ESPACIO
+
+    // %s permite el almacenamiento de la cadena de texto
+    // %c permite un caracter
 
     printf("El nombre ingresado fue: %s\n", nombreUsuario);
 }
