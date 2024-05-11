@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+/* 
+USAR ARREGLOS
+*/
+
 int main()
 {
     int num_alumnos, num_comisiones, opciones, i, j;
