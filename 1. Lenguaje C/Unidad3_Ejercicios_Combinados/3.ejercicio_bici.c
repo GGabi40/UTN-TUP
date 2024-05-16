@@ -13,7 +13,7 @@ void main()
     scanf("%d", &medio_pago);
 
     printf("Es jubilado? Ingrese S o N según el caso\n");
-    scanf("%c", &es_jubilado);
+    scanf(" %c", &es_jubilado);
 
     printf("Ingrese el tipo de bicicleta. 1- deportiva; 2-comun\n");
     scanf("%d", &tipo_bici);
@@ -22,7 +22,7 @@ void main()
         precio_bici = 500;
     } else {
         printf("Desea que tenga canasto? Ingrese S o N según el caso\n");
-        scanf("%c", &tipo_bici_comun);
+        scanf(" %c", &tipo_bici_comun);
 
         if (tipo_bici_comun == 'S' || tipo_bici_comun == 's') {
             precio_bici = 400;

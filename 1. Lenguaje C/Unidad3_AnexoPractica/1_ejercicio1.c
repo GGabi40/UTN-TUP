@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <bool.h>
 
 // 9 9 9 9 9 MÁXIMO 
 // 1 0 1 0 1
@@ -11,8 +12,8 @@
 
 void main()
 {
-    int legajo, materia, comision;
-    char turno;
+    int legajo, materia, comision, turno;
+    bool invalido = false;
 
     do
     {
