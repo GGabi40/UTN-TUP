@@ -14,13 +14,12 @@ int main()
         } else {
             resultado = (num-contador)*2;
         }
-        
+
         contador = contador+2;
         
-    printf("%d\n",resultado);
+        printf("%d\n",resultado);
 
     } while (resultado > 0);
-    
     
     return 0;
 }
