@@ -19,7 +19,7 @@ int main()
     // 2o -> cant caracteres que quiero leer (sizeof() -> contiene cant de bits que posee lo que está dentro de paréntesis)
     // 3o -> de donde busca la cadena (stdin: busca de la entrada del teclado)
 
-    // strcspn: encuentra dentro de cadena la aparición de "\n" y lo cambia a NULL
+    // strcspn: encuentra dentro de cadena "nombres" la aparición de "\n" y lo cambia a NULL
     
     for (int i = 0; i < 10; i++)
     {
