@@ -23,6 +23,16 @@ tipo_de_retorno nombreFuncion(parametros)
 float sumar(float num1, float num2); // otra alternativa:
 // float sumar(float, float);
 
+
+/* 
+VARIABLES:
+    Todas las variables definidas DENTRO de un subproceso son LOCALES:
+    Se reconocen solo dentro de este subproceso.
+     Varibles GLOBALES: se definen fuera del algoritmo principal.
+*/
+
+// int numero1; // Ejemplo de Variable GLOBAL
+
 int main()
 {
     float numero1, numero2, resultado;
