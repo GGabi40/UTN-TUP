@@ -56,7 +56,9 @@ int main()
 
 fgets:
     Nombre completo: file get string
-    Descripción: Lee una línea de una entrada (normalmente de un archivo o stdin) hasta un máximo de n-1 caracteres o hasta encontrar un salto de línea (\n), lo que ocurra primero. Almacena la línea en un buffer y asegura que la cadena resultante esté terminada en nulo (\0).
+    Descripción: Lee una línea de una entrada (normalmente de un archivo o stdin) hasta 
+    un máximo de n-1 caracteres o hasta encontrar un salto de línea (\n), lo que ocurra primero. 
+    Almacena la línea en un buffer y asegura que la cadena resultante esté terminada en nulo (\0).
     Firma: char *fgets(char *str, int n, FILE *stream);
     Argumentos:
         1o -> donde almacenar la cadena leída (buffer)
@@ -65,7 +67,8 @@ fgets:
 
 strcspn:
     Nombre completo: string complement span
-    Descripción: Calcula la longitud del segmento inicial de una cadena que no contiene ninguno de los caracteres presentes en otra cadena dada.
+    Descripción: Calcula la longitud del segmento inicial de una cadena 
+    que no contiene ninguno de los caracteres presentes en otra cadena dada.
     Firma: size_t strcspn(const char *str1, const char *str2);
     Argumentos:
         1o -> cadena en la que buscar

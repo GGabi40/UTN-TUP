@@ -4,6 +4,7 @@
         "1.ejercicio1.C": "cpp",
         "stdio.h": "c",
         "stdlib.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "random": "c"
     }
 }
