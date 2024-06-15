@@ -4,6 +4,7 @@
 
 void cargarArreglo(char tabla[4][4][30]);
 void preguntarCantidades(char tabla[4][4][30]);
+void ordenarCantidades(char tabla[4][4][30]);
 float precioPorProducto(char tabla[4][4][30]);
 float calculoIVA(float montoTotalsinIVA);
 
@@ -16,6 +17,7 @@ int main()
     cargarArreglo(tabla);
 
     preguntarCantidades(tabla);
+    ordenarCantidades(tabla);
     montoTotalsinIVA = precioPorProducto(tabla);
     montoTotalconIVA = calculoIVA(montoTotalsinIVA);
 
@@ -23,6 +25,34 @@ int main()
     printf("Acumulado con IVA: $ %.2f\n", montoTotalconIVA);
 
     return 0;
+}
+
+/* Ordena la cantidad por más vendida: */
+void ordenarCantidades(char tabla[4][4][30])
+{
+    int posicion;
+    char piv, aux;
+
+    for(int i = 0; i < 4-1; i++)
+    {
+        piv = i;
+        for(int j = i+1; j<4; j++)
+        {
+            if(atof(tabla[piv][3]) < atof(tabla[j][3]))
+            {
+                piv = j;
+            }
+        }
+
+        aux = tabla[i][3];
+        tabla[i][3] = tabla[piv][3];
+        tabla[piv][3] = aux;
+    }
+
+    for(int i = 0; i<4; i++)
+    {
+        printf("El arreglo ordenado: %s\n", tabla[i,3]);
+    }
 }
 
 /* Calcula el IVA */
