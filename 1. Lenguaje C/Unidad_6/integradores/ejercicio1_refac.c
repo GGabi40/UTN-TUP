@@ -5,6 +5,7 @@
 void cargarArreglo(char tabla[4][4][30]);
 void preguntarCantidades(char tabla[4][4][30]);
 void ordenarCantidades(char tabla[4][4][30]);
+void ordenarCantidades(char tabla[4][4][30]);
 float precioPorProducto(char tabla[4][4][30]);
 float calculoIVA(float montoTotalsinIVA);
 
@@ -17,6 +18,7 @@ int main()
     cargarArreglo(tabla);
 
     preguntarCantidades(tabla);
+    ordenarCantidades(tabla);
     ordenarCantidades(tabla);
     montoTotalsinIVA = precioPorProducto(tabla);
     montoTotalconIVA = calculoIVA(montoTotalsinIVA);
