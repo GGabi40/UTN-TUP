@@ -5,7 +5,6 @@
 void cargarArreglo(char tabla[4][4][30]);
 void preguntarCantidades(char tabla[4][4][30]);
 void ordenarCantidades(char tabla[4][4][30]);
-void ordenarCantidades(char tabla[4][4][30]);
 float precioPorProducto(char tabla[4][4][30]);
 float calculoIVA(float montoTotalsinIVA);
 
@@ -18,7 +17,6 @@ int main()
     cargarArreglo(tabla);
 
     preguntarCantidades(tabla);
-    ordenarCantidades(tabla);
     ordenarCantidades(tabla);
     montoTotalsinIVA = precioPorProducto(tabla);
     montoTotalconIVA = calculoIVA(montoTotalsinIVA);
@@ -54,7 +52,6 @@ void ordenarCantidades(char tabla[4][4][30])
     printf("Elementos más vendidos:\n");
     for(int i = 0; i<4; i++)
     {
-        printf("%s -> Vendió: ", tabla[i][2]);
         printf("%s unidades.\n", tabla[i][3]);
     }
 }
