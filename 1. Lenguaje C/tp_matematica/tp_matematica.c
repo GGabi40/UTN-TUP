@@ -13,11 +13,11 @@ int main()
     int contadorUniv, contadorA, contadorB;
     int opc, opcDiferencia;
 
-    printf("Ingrese los Elementos del Conjunto Universal: \n");
+    printf("\nIngrese los Elementos del Conjunto Universal: \n");
     contadorUniv = cargarArreglo(universal);
-    printf("Ingrese los Elementos del Conjunto A: \n");
+    printf("\nIngrese los Elementos del Conjunto A: \n");
     contadorA = cargarArreglo(a);
-    printf("Ingrese los Elementos del Conjunto B: \n");
+    printf("\nIngrese los Elementos del Conjunto B: \n");
     contadorB = cargarArreglo(b);
 
     do
@@ -114,7 +114,7 @@ void unionConjunto(char a[10][30], char b[10][30], int contadorA, int contadorB)
     int repetidor = 0;
     int bandera = 0;
 
-    printf("La unión entre a y b: \n");
+    printf("La unión entre A y B: \n");
     printf("{ ");
 
     // recorre conjunto A
@@ -156,7 +156,7 @@ void unionConjunto(char a[10][30], char b[10][30], int contadorA, int contadorB)
 // printea intersección entre conjunto A y B
 void interseccion(char a[10][30], char b[10][30], int contadorA, int contadorB)
 {
-    printf("La intersección entre a y b: \n");
+    printf("La intersección entre A y B: \n");
     printf("{ ");
 
     // recorre conjunto A
