@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica 3 | Unid 1</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+                sans-serif;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form>input {
+            max-width: 70%;
+        }
+
+        button {
+            margin: auto;
+            padding: 3px;
+            max-width: 50px;
+        }
+
+        fieldset {
+            padding: 10px;
+            margin-bottom: 20px;
+            max-width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario de Ingreso</h1>
+
+    <fieldset>
+        <legend>Ejercicio 1</legend>
+
+        <form action="">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" />
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" placeholder="Ingrese su Edad" />
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Ejercicio 2</legend>
+
+        <form action="">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" />
+            <label for="mail">Mail:</label>
+            <input type="email" name="mail" id="mail" placeholder="Ej.: juan@gmail.com" />
+            <label for="contra">Contraseña:</label>
+            <input type="password" name="contra" id="contra" size="25" placeholder="Ingrese contraseña" required />
+            <input type="password" name="contra-dos" id="contra-dos" placeholder="Repite contraseña" size="25"
+                required />
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Ejercicio 3</legend>
+
+        <form action="">
+            <label for="mail">Mail:</label>
+            <input type="email" name="mail" id="mail" placeholder="Ej.: juan@gmail.com" />
+            <label for="dni">DNI:</label>
+            <input type="text" name="dni" id="dni" placeholder="Ingrese su DNI" size="8" />
+            <label for="cv">Escribe su CV:</label>
+            <textarea placeholder="Ingrese su CV"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Ejercicio 4</legend>
+
+        <form action="">
+            <label for="mail">Mail:</label>
+            <input type="email" name="mail" id="mail" placeholder="Ej.: juan@gmail.com" />
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" id="pass" size="20" placeholder="Ingrese contraseña" required />
+            <label for="peliculas">Ingrese sus gustos:</label>
+            <label for="terror">
+                <input type="checkbox" name="peliculas" id="terror" value="terror" />
+                Terror
+            </label>
+            <label for="accion">
+                <input type="checkbox" name="peliculas" id="accion" value="accion" />
+                Accion
+            </label>
+            <label for="aventura">
+                <input type="checkbox" name="peliculas" id="aventura" value="aventura" />
+                Aventura
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Ejercicio 5</legend>
+
+        <form action="">
+            <label for="sistemOp">Ingrese su Sistema Operativo: <br />
+                <input type="radio" name="sistemOp" value="linux" /> Linux
+                <input type="radio" name="sistemOp" value="windows" /> Windows
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Ejercicio 6</legend>
+
+        <form action="">
+            <select name="mails" id="emails" multiple>
+                <option value="1">Hotmail</option>
+                <option value="2">Gmail</option>
+                <option value="3">Yahoo</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Ejercicio 7</legend>
+
+        <form action="">
+            <select name="paises">
+                <option value="0" selected>Ingrese su país</option>
+                <optgroup label="America">
+                    <option value="mexico">Mexico</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="chile">Chile</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="portugal">Portugal</option>
+                    <option value="espania">España</option>
+                    <option value="alemania">Alemaña</option>
+                </optgroup>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Ejercicio 8</legend>
+
+        <form action="">
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" name="nombre" />
+            <label for="votacion">
+                Vote por una opción: <br />
+                <input type="radio" name="votacion" />Excelente
+                <input type="radio" name="votacion" />Muy Bueno
+                <input type="radio" name="votacion" />Bueno
+                <input type="radio" name="votacion" />Regular
+                <input type="radio" name="votacion" />Malo
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+</body>
+
+</html>
