@@ -13,6 +13,12 @@
         </ul>
     </li>
     <li>Cuatrimestre
-    <ul><li>HTML</li></ul>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>Python</li>
+        <li>Flask</li>
+    </ul>
     </li>
 </ol>
