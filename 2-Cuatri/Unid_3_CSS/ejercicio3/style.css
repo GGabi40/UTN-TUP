@@ -25,6 +25,25 @@ header, footer {
 .contenedor {
     position: relative;
     top: 150px;
+
+    display: flex;
+    align-items: center;
+}
+
+.derecha {
+    width: 75%;
+}
+
+.izquierda {
+    width: 25%;
+    background-color: gainsboro;
+    padding: 10px;
+    border-radius: 3px;
+    line-height: 30px;
+}
+
+ul {
+    list-style: none;
 }
 
 footer {
