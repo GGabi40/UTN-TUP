@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-header {
+header, footer {
     color: #fff;
     background-color: blueviolet;
 
@@ -25,17 +25,5 @@ header {
 }
 
 footer {
-    color: #fff;
-    background-color: blueviolet;
-
-    padding: 40px;
-    width: 100%;
-
-    font-size: 30px;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-align: center;
-
-    position: fixed;
     bottom: 0;
 }
