@@ -1,0 +1,13 @@
+p {
+    background-color: red;
+}
+
+/* Clase */
+.parrafo {
+    background-color: blue;
+}
+
+/* ID */
+#parrafo2 {
+    background-color: green;
+}

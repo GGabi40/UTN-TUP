@@ -1,0 +1,19 @@
+/* Ejercicio: Crea un div con un párrafo dentro. Estiliza el div 
+para que tenga un
+ancho de 300px, un padding de 20px, un borde de 5px sólido y
+ un margen de
+10px. Estiliza el párrafo para que tenga un margen interno (padding) de 10px. */
+
+div {
+    background-color: blue;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+
+    color: white;
+}
+
+p {
+    padding: 10px;
+}
