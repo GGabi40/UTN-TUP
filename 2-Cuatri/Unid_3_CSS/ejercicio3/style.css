@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 header, footer {
     color: #fff;
     background-color: blueviolet;
@@ -12,7 +16,6 @@ header, footer {
     width: 100%;
 
     font-size: 30px;
-    font-family: sans-serif;
     font-weight: bold;
     text-align: center;
 
