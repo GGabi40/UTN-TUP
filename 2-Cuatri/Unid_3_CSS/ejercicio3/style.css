@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    color: #fff;
+    background-color: blueviolet;
+
+    padding: 40px;
+    width: 100%;
+    border-radius: 8px;
+
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+    position: fixed;
+}
+
+.contenedor {
+    position: relative;
+    top: 150px;
+}
+
+footer {
+    color: #fff;
+    background-color: blueviolet;
+
+    padding: 40px;
+    width: 100%;
+    border-radius: 8px;
+
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+    position: fixed;
+    bottom: 0;
+}
