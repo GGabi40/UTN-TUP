@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | GGabi40</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/logoGB.png" type="image/x-icon">
+</head>
+
+<body>
+    <header id="home">
+        <a href="#home">
+            <img src="./img/logoGB.png" alt="Logotipo de blog" id="logoImg">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a class="a-list" href="#home">Inicio</a></li>
+                <li><a class="a-list" href="#blog">Blog</a></li>
+                <li><a class="a-list" href="#sobremi">Sobre mí</a></li>
+                <li><a class="a-list" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="contenedor-buscador">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <main class="contenedor-contenido">
+        <div class="main-content" id="blog">
+            <article>
+                <h2>👩‍💻 Mi Primer Videojuego</h2>
+                <figure>
+                    <img src="./img/foto1.webp" alt="Vista Previa de VideoJuego Mentalist" class="img">
+                    <figcaption>🎮 Mi primer videojuego! Toque <a href="https://ggabi40.github.io/Mentalist"
+                            target="_blank" rel="noopener noreferrer" class="link subtitulo">aquí</a> para ver.
+                    </figcaption>
+                </figure>
+                <span class="fecha">20-04-2023</span>
+                <span class="comentarios">Comentarios:</span>
+                <div class="contenedor-comentario">
+                    <textarea name="comentarios" id="comentarios" placeholder="Comente aquí..."></textarea>
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </article>
+            <article>
+                <h2>💻 Mi Primer Proyecto Oficial</h2>
+                <figure>
+                    <img src="./img/foto2.webp" alt="Vista Previa de Landing Page CoCAEM 2023" class="img">
+                    <figcaption>Este fue el primer proyecto que realicé para un Congreso Científico.</figcaption>
+                </figure>
+                <span class="fecha">16-11-2023</span>
+                <span class="comentarios">Comentarios:</span>
+                <div class="contenedor-comentario">
+                    <textarea name="comentarios" id="comentarios" placeholder="Comente aquí..."></textarea>
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </article>
+            <article>
+                <h2>😝 ¡Nuevo Video!</h2>
+                <figure>
+                    <img src="./img/foto3.webp" alt="Imagen de miniatura de video de Youtube" class="img">
+                    <figcaption>✨ ¡Mezclé salud y tecnología! Toque <a
+                            href="https://www.youtube.com/watch?v=QP2X_4sBO8M" target="_blank" rel="noopener noreferrer"
+                            class="link subtitulo">aquí</a> para acceder.</figcaption>
+                </figure>
+                <span class="fecha">20-12-2023</span>
+                <span class="comentarios">Comentarios:</span>
+                <div class="contenedor-comentario">
+                    <textarea name="comentarios" id="comentarios" placeholder="Comente aquí..."></textarea>
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </article>
+
+            <article id="sobremi">
+                <h2>Sobre mí</h2>
+                <div class="contenedor-informacion">
+                    <img src="./img/foto_gabi.webp" alt="Foto de GGabi40">
+                    <div class="contenedor-texto">
+                        <h3>Gabriela Baptista Carvalho <span class="parentesis">(GGabi40)</span></h3>
+                        <ul>
+                            <li>Edad: 24 años.</li>
+                            <li>Ocupación: Estudiante.</li>
+                            <li>Hobby: Tener ideas y programarlas.</li>
+                        </ul>
+                        <p class="p tecnologias">Tecnologías:</p>
+                        <ul class="tecnologias">
+                            <li><i class="fab fa-html5"></i> HTML5</li>
+                            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                            <li><i class="fab fa-js"></i> JavaScript</li>
+                            <li><i class="fab fa-react"></i> ReactJS</li>
+                            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                            <li><i class="fas fa-laptop-code"></i> C#</li>
+                        </ul>
+
+                        <div class="contenedor-gif">
+                            <img src="https://i.gifer.com/nRm.gif" alt="Gif de gatito">
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article id="contacto">
+                <h2>Contacto</h2>
+                <form class="formulario-contacto">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Ej.: Juan">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Ej.: Perez">
+                    <label for="mail">Mail</label>
+                    <input type="email" name="mail" placeholder="Ej.: juanp56@email.com">
+                    <label for="texto">Mensaje</label>
+                    <textarea name="texto" placeholder="Escribe tu mensaje..."></textarea>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+                </form>
+
+            </article>
+        </div>
+
+        <!-- Categoría de posts -->
+        <!-- Agg ultimo publicado -->
+        <div class="sidebar">
+            <ul class="ul sidebar">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#sobremi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contenido-footer">
+            <ul class="iconos-social">
+                <li><a href="https://www.instagram.com/ggabi40" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/gabriela-baptista-carvalho/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/ggabi40" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <p class="texto-footer">Hecho con ♥️ por <a href="https://ggabi40.github.io/linktree/"
+                    target="_blank">GGabi40</a>.</p>
+
+            <!-- Agg Politica de Privacidad y Mapa del Sitio -->
+            <div class="footer-links">
+                <p>&copy; 2024 GGabi40. Todos los derechos reservados.</p>
+                <p class="footer-text"><a href="#" style="color: #FFFFFF; text-decoration: underline;">Política de Privacidad</a> | <a href="#" style="color: #FFFFFF; text-decoration: underline;">Términos y Condiciones</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
