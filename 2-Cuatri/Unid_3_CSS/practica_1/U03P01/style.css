@@ -32,6 +32,9 @@ ul {
     font-family: monospace;
     font-size: 18px;
     max-width: 40%;
+    margin-left: 100px;
+    padding: 20px;
+    border: 2px solid blue;
 }
 
 a {
@@ -40,12 +43,6 @@ a {
 
 li a {
     color: orange;
-}
-
-ul {
-    margin-left: 100px;
-    padding: 20px;
-    border: 2px solid blue;
 }
 
 li {
