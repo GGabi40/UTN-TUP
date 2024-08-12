@@ -1,3 +1,7 @@
+html {
+    background-color: rgb(245, 245, 245);
+}
+
 body {
     font-family: sans-serif;
 }
@@ -27,6 +31,7 @@ p {
 ul {
     font-family: monospace;
     font-size: 18px;
+    max-width: 40%;
 }
 
 a {
@@ -41,6 +46,15 @@ ul {
     margin-left: 100px;
     padding: 20px;
     border: 2px solid blue;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .lista-verde, 
