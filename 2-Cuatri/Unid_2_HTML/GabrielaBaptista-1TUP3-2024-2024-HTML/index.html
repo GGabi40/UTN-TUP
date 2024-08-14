@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globalizador HTML</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        gap: 40px;
+    }
+
+    img {
+        height: 200px;
+        max-width: 200px;
+        border-radius: 10px;
+        align-self: center;
+        margin-bottom: 10px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    #sobremi {
+        text-align: left;
+    }
+
+    .biografia {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        margin-left: 30px;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+        border-collapse: collapse;
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    #redes a {
+        margin-right: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 5px;
+    }
+
+    form input[type="submit"] {
+        max-width: 60px;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Gabriela Baptista Carvalho</h1>
+    </header>
+    <main>
+        <img src="https://avatars.githubusercontent.com/u/107872122?v=4" alt="Foto de Gabriela">
+
+        <div id="sobremi">
+            <div class="sobremi biografia">
+                <h2>Biografia:</h2>
+                <p>Brasileña, viviendo en Argentina hace 5 años.</p>
+            </div>
+            <div class="sobremi intereses">
+                <h2>Intereses:</h2>
+                <ul>
+                    <li>👩‍💻 Programación</li>
+                    <li>🧉 Mates</li>
+                    <li>🎮 Juegos</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contacto">
+            <h2>Tabla de Contacto</h2>
+            <table>
+                <tr>
+                    <th>Mail</th>
+                    <th>GitHub</th>
+                    <th>Instagram</th>
+                </tr>
+                <tr>
+                    <td>gabibc2000@hotmail.com</td>
+                    <td>@GGabi40</td>
+                    <td>@GGabi40</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="redes">
+            <h2>Redes Sociales</h2>
+            <a href="http://github.com/ggabi40" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="http://instagram.com/ggabi40" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="http://youtube.com/ggabi40" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+
+        <div id="contacto">
+            <fieldset>
+                <legend>Contacto</legend>
+                <form>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Ejemplo: Juan">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ejemplo: Perez">
+                    <label for="mail">Mail</label>
+                    <input type="mail" name="mail" id="mail" placeholder="Ejemplo: juanperez@gmail.com">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Escribe su mensaje..."></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </fieldset>
+        </div>
+    </main>
+
+</body>
+
+</html>
