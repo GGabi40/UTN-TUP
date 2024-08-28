@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios 2</title>
+  </head>
+  <body>
+    <script>
+        let numero1;
+        let numero2;
+        let numero3;
+
+        // 1-Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
+/* 
+        numero1 = parseInt(prompt("Ingrese el primer numero:"));
+        numero2 = parseInt(prompt("Ingrese el segundo numero:"));
+        numero3 = parseInt(prompt("Ingrese el tercer numero:"));
+
+        if(numero1 > numero2 && numero1 > numero3) {
+            document.write("El numero 1 es el mayor");
+        } else if (numero2 > numero1 && numero2 > numero3) {
+            document.write("El numero 2 es el mayor");
+        } else {
+            document.write("El numero 3 es el mayor");
+        } */
+
+        // 2-Se ingresa por teclado un valor entero, mostrar una leyenda que indique si 
+        // el número es positivo, cero o negativo.
+
+        /* numero1 = parseInt(prompt("Ingrese un numero:"));
+        if(numero1 > 0) {
+            document.write("El numero es positivo");
+        } else if(numero1 == 0) {
+            document.write("El numero es cero");
+        } else {
+            document.write("El numero es negativo");
+        } */
+
+        // 3-Confeccionar un programa que permita cargar un número entero positivo de hasta tres 
+        // cifras y muestre un mensaje indicando si tiene 1, 2, o 3 cifras.
+
+        /* do {
+            numero1 = parseInt(prompt("Ingrese un numero:"));
+        } while(numero1 >= 1000);// menos que 3 cifras
+
+        if (numero1 < 10){ 
+            document.write("Tiene un digito.");
+        } else if(numero1 < 100 && numero1 >= 10) {
+            document.write("Tiene dos digitos.");
+        } else {
+            document.write("Tiene tres digitos.");
+        } */
+
+        // 4-De un postulante a un empleo, que realizó un test de capacitación, se obtuvo la siguiente 
+        // información: 
+
+        //nombre del postulante, 
+        //cantidad total de preguntas que se le realizaron y 
+        //cantidad de preguntas que contestó correctamente. 
+
+        // Se pide confeccionar un programa que lea los datos del 
+        // postulante e informe el nivel del mismo según el porcentaje de respuestas correctas que ha obtenido, 
+        // y sabiendo que:
+    // Nivel superior: Porcentaje>=90%.
+    // Nivel medio: Porcentaje>=75% y <90%.
+    // Nivel regular: Porcentaje>=50% y <75%.
+    // Fuera de nivel: Porcentaje<50%.
+
+        let nombrePostulante;
+        let cantPreguntas;
+        let respuestasCorrectas;
+        let porcentaje;
+
+        nombrePostulante = prompt("Ingrese nombre:");
+        cantPreguntas = parseInt(prompt("Ingrese cant preguntas"));
+        respuestasCorrectas = parseInt(prompt("Ingrese cantidad respuestas correctas"));
+
+        porcentaje = (respuestasCorrectas / cantPreguntas)*100;
+
+        if (porcentaje >= 90) {
+            document.write("Nivel Superior");
+        } else if (porcentaje >= 75 && porcentaje < 90) {
+            document.write("Nivel Medio");
+        } else if (porcentaje >= 50 && porcentaje < 75) {
+            document.write("Nivel Regular");
+        } else {
+            document.write("fuera de Nivel");
+        }
+
+    </script>
+  </body>
+</html>

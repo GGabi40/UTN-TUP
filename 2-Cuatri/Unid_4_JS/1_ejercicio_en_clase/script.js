@@ -66,8 +66,40 @@ let nota3 = parseInt(prompt("Ingrese la tercer nota: "));
 
 let promedio = (nota1 + nota2 + nota3) / 3;
 
-if(promedio >= 4) {
-    document.write("Regular.");
+if (promedio >= 4) {
+  document.write("Regular.");
 } else {
-    document.write("Reprobado.");
+  document.write("Reprobado.");
+}
+
+document.write("<br>");
+
+/* 
+Confeccionar un programa que pida por teclado tres notas de un alumno,
+calcule el promedio e imprima alguno de estos mensajes:
+
+Si el promedio es >=7 mostrar "Promocionado".
+Si el promedio es >=4 y <7 mostrar "Regular".
+Si el promedio es <4 mostrar "Reprobado".
+*/
+
+if (promedio >= 7) {
+  document.write("Promocionado.");
+} else if (promedio >= 4 || promedio < 7) {
+  document.write("Regular.");
+} else {
+  document.write("Reprobado.");
+}
+
+/* Se ingresa por teclado un número positivo de uno o dos dígitos (1..99) 
+mostrar un mensaje indicando si el número tiene uno o dos dígitos 
+(recordar de convertir a entero con parseInt para preguntar posteriormente por una variable entera). 
+Tener en cuenta qué condición debe cumplirse para tener dos dígitos un número entero. -->
+*/
+
+let numero = Number(prompt("Ingrese un numero: "));
+if (numero >= 9) {
+  document.write("El numero es de dos digito");
+} else {
+  document.write("El numero es de un digitos");
 }
