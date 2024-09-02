@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto | Pre-Parcial</title>
     <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    
+    <div class="contenedor">
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" placeholder="Ingrese nombre..." required>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese e-mail..." required>
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject" placeholder="Ingrese subject..." required>
+            <label for="text">Mensaje:</label>
+            <textarea name="text" id="text"></textarea>
+            <input type="submit" value="Enviar">
+            <button id="volver" onclick="window.location.href='baptista-gabriela.html'">Volver</button>
+        </form>
+    </div>
 </body>
 </html>
