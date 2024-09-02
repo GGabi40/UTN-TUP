@@ -8,6 +8,7 @@
     background-color: rgb(60, 66, 95);
     color: white;
     display: flex;
+    padding: 20px;
 }
 
 .profile-picture {
