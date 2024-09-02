@@ -97,6 +97,14 @@ h3 {
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
 }
 
+.my-button:hover {
+    cursor: pointer;
+    background-color: rgb(43, 49, 79);
+}
+
+.my-button:active {
+    cursor: pointer;
+    background-color: rgb(22, 28, 55);
+}
