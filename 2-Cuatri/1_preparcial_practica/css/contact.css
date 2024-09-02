@@ -71,3 +71,11 @@ input[type="submit"], button {
     border: none;
     border-radius: 3px;
 }
+
+input[type="submit"]:active {
+    background: rgb(21, 26, 54);
+}
+
+button:active {
+    background: rgb(95, 107, 163);
+}
