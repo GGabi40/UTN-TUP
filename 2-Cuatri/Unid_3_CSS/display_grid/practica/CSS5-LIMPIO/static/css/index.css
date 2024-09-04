@@ -1,0 +1,210 @@
+/* Seleccionar root para variables de colores azul y
+ gris
+Eliminar todo margen y relleno
+Agregar al body el mismo color de fondo de index.
+ */
+
+:root {
+  --color-azul-body: rgba(0, 139, 191, 1);
+  --color-gris-body: rgba(255, 255, 255, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    var(--color-azul-body),
+    var(--color-gris-body),
+    var(--color-azul-body)
+  );
+}
+
+/* Selecionar la clase "card" y agregar display para que queden en linea,
+color de fondo rgba(42,67,59,0.1), un maximo ancho permitido, ancho,
+sombra rgba(0,0,0,0.6), alinear texto, suavisar borde, asegurar que
+las imágenes no se salgan del contenedor. */
+
+.card {
+  background-color: rgba(224, 243, 237, 0.1);
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  border-radius: 1%;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+.imagen-responsive {
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  height: 250px;
+}
+
+/* Incorporación de fuente externa */
+h1 {
+  font-family: "Cantora One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: blue;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  font-size: 5em;
+}
+
+/* Incorporación de fuente interna */
+@font-face {
+  font-family: "Alkatra";
+  src: url("../../assets/fonts/Alkatra/Alkatra-VariableFont_wght.ttf");
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* Seleccionar la etiqueta del pie de página
+y definir: color de fondo, color, relleno, alinear
+el texto al centro. */
+footer {
+  background-color: var(--color-fondo-header);
+  color: var(--color-texto-header);
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#galeria-s1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#galeria-s2 {
+  display: flex;
+  background: rgba(62, 92, 92, 0.3) !important;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+p,
+#texto,
+h3 {
+  font-family: "Cantora One", sans-serif;
+  font-size: 1.5em;
+  padding: 1em;
+  text-align: justify;
+}
+
+/* Ancho del párrafo */
+#texto {
+  width: 30%;
+}
+
+p {
+  font-size: 1em;
+}
+
+h3 {
+  text-align: center;
+}
+
+.animacion {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* Ancho animación */
+  width: 70%;
+
+  animation-name: cambiar;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes cambiar {
+  0% {
+    background-image: url("../img/personas-perro-coche.jpg");
+  }
+  25% {
+    background-image: url("../img/bandera.jpg");
+  }
+  50% {
+    background-image: url("../img/personas-perro-coche.jpg");
+  }
+  75% {
+    background-image: url("../img/personas-perro-coche.jpg");
+  }
+  100% {
+    background-image: url("../img/esquel5.jpg");
+  }
+}
+
+/* Seleccionar la clase card y definir 
+para las imágenes transición, indicando
+que se hara una transformación en cuanto tiempo 
+y que velocidad.
+Luego aplicar un hover para  que 
+la transformación tenga una escala. */
+/* Transición imagenes s1 */
+.card img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+  transform: scale(1.2);
+}
+
+#galeria-s3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 10vh;
+  margin-bottom: 10vh;
+}
+
+/* Transición imagenes s3 */
+#galeria-s3 > img {
+  transition: transform 0.3s ease-in-out;
+}
+
+#galeria-s3 > img:hover {
+  transform: scale(1.2) rotate(10deg) translateX(5vw);
+}
+
+#texto {
+  width: 100%;
+}
+
+
+/* -------------------------------------------- */
+
+@media (max-width: 400px) {
+  #galeria-s2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .animacion {
+    width: 100%;
+  }
+
+  #titulo {
+    font-size: 0.8em;
+    margin-top: 130px;
+  }
+}

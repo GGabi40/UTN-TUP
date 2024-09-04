@@ -1,0 +1,27 @@
+Aplicar flex s1:
+
+se desplacen los elemnetos
+y centrarlos. Flex wrap OK
+
+-------
+
+Aplicar s2:
+
+Aplicar media querys a las s2
+para flex en column, centrar. OK
+
+Aplicar mismo ancho animación y 
+texto al 100% OK
+
+Dismimuir tamaño de titulo y
+separar del encabezado. OK
+
+------
+
+Aplicar a la s3:
+
+grid, indicar cantidad de columnas, separar 
+las filas, justificar, margen inferior OK
+
+Pie de página con flex y justificar 
+el contenido.
