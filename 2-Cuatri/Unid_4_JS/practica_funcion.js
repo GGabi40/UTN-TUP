@@ -4,6 +4,8 @@ function suma(a, b) {
 
 suma(10, 5);
 
+// -------
+
 function factorial(num) {
     let acc = 1;
 
@@ -15,6 +17,8 @@ function factorial(num) {
 }
 
 factorial(4);
+
+// -------
 
 function contarVocal(texto) {
     let longitud = texto.length;
@@ -34,6 +38,9 @@ function contarVocal(texto) {
 }
 
 contarVocal("hola");
+
+// -------
+
 
 function cualMayor(frase) {
     let cadaPalabra;
