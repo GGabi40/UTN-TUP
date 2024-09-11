@@ -26,21 +26,35 @@ function contarVocal(texto) {
         }
     }
 
-    console.log(contador);
+    if(contador > 1) {
+        console.log("Hay ", contador, " vocales.");
+    } else {
+        console.log("Hay ", contador, " vocal.");
+    }
 }
 
 contarVocal("hola");
 
 function cualMayor(frase) {
-    let longitudFrase = frase.length;
     let cadaPalabra;
+    let mayorPalabra;
+    let numMayorPalabra;
 
-    for(let i = 0; i <= longitudFrase; i++) {
-        cadaPalabra = frase.split(" ");
+    cadaPalabra = frase.split(" ");
+    let cuantasPalabras = cadaPalabra.length;
+
+    for(let i = 0; i < cuantasPalabras; i++) {
+
+        if (i == 0) {
+            mayorPalabra = cadaPalabra[i];
+            numMayorPalabra = cadaPalabra[i].length;
+        } else if (numMayorPalabra < cadaPalabra[i].length) {
+            mayorPalabra = cadaPalabra[i];
+            numMayorPalabra = cadaPalabra[i].length;
+        }
     }
 
-    let longitudCadaPalabra = cadaPalabra.length;
-
+    console.log(`La mayor palabra de la oración es: ${mayorPalabra}. Tiene: ${numMayorPalabra} letras.`);
 }
 
 cualMayor("Hola que tal");
