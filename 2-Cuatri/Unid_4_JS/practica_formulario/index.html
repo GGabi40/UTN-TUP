@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Formulario | JavaScript</title>
+    <style>
+        form, fieldset {
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+            max-width: 400px;
+            min-width: 360px;
+            gap: 10px;
+        }
+
+        input {
+            padding: 8px 20px;
+        }
+
+        input[type="submit"] {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ejercicio 2: Formulario de Contacto
+        Crea un formulario de contacto con los siguientes campos: 
+        nombre, número de teléfono, 
+        correo electrónico y mensaje. 
+    --> 
+
+    <form id="contacto">
+        <fieldset>
+            <legend>Práctica con Formulario</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="text" name="telefono" id="telefono" placeholder="341 555555" required>
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" id="mail" placeholder="mail@example.com" required>
+            <label for="mensaje">Tu mensaje (Hasta 500 caracteres):</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+    
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
