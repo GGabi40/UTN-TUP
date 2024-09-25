@@ -1,3 +1,8 @@
+""" 
+APUNTE
+https://spotted-zircon-0fe.notion.site/Python-dd2cbf7f02934193a7727d1da198e5f0?pvs=4
+"""
+
 # COMANDO PRINT()
 print('Hola Mundo'); # Hola Mundo
 print(4 + 2); # 6
