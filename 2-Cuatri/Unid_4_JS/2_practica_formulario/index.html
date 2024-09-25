@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Formulario | JavaScript</title>
+    <style>
+        form, fieldset {
+            border-radius: 8px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+            max-width: 400px;
+            min-width: 360px;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        fieldset {
+            box-shadow: 1px 1px 6px black;
+        }
+
+        legend {
+            background-color: #fff;
+            box-shadow: 1px 1px 6px black;
+            border-radius: 8px;
+            padding: 8px;
+        }
+
+        input, select {
+            padding: 8px 20px;
+        }
+
+        input[type="submit"] {
+            margin-top: 30px;
+        }
+
+        #otroPais {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        select {
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"] {
+            height: 30px;
+            font-size: 18px;
+        }
+
+        .aparece {
+            display: block;
+        }
+
+        .desaparece {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ejercicio 2: Formulario de Contacto
+        Crea un formulario de contacto con los siguientes campos: 
+        nombre, número de teléfono, 
+        correo electrónico y mensaje. 
+    --> 
+
+    <form id="contacto">
+        <fieldset>
+            <legend>Práctica con Formulario</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre" required>
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" id="mail" placeholder="mail@example.com" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="text" name="telefono" id="telefono" placeholder="341 555555" required>
+
+            <label for="pais">País</label>
+            <select name="pais" id="pais">
+                <option value="0">Seleccionar tu país</option>
+                <option value="1">Argentina</option>
+                <option value="2">Brasil</option>
+                <option value="3">Colombia</option>
+                <option value="4">Ecuador</option>
+                <option value="5">Otro</option>
+            </select>
+
+            <div class="desaparece">
+                <label for="nombrePais">Nombre del País</label>
+                <input type="text" name="nombrePais" id="nombrePais">
+            </div>
+
+            <label for="mensaje">Tu mensaje (Hasta 500 caracteres):</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+    
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
