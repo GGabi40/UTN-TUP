@@ -121,19 +121,44 @@ lista.reverse()
 print(f'La lista invertida: {lista}')
 
 
-
-# Ejercicio 9: Números primos
-
-# Escribe un programa que imprima todos los 
-# números primos entre 1 y 50 utilizando un bucle for. 
-# Un número primo es aquel que solo es divisible 
-# por 1 y por sí mismo.
-
-
-
 # Ejercicio 10: Calificación de notas
 # Crea un programa que pida al usuario ingresar 
 # 5 calificaciones (de 0 a 10) y las almacene en una lista. 
 # Luego, el programa debe imprimir cuántas calificaciones son 
 # mayores o iguales a 6 (aprobadas) y cuántas son menores (reprobadas).
+
+
+print('<>' *20)
+print('\n\033[4;33mCALIFICACIÓN DE NOTAS\033[m\n')
+print('<>' *20)
+
+notas = []
+
+for i in range(1,6):
+    while True:
+        nota = int(input(f'Ingrese la nota \033[32m{i}\033[m: '))
+        
+        if(nota < 0 or nota > 10):
+            print('La nota debe ser mayor a 10 o menor que 0.')
+        else:
+            notas.append(nota)
+            break
+
+print(f'Lista de notas: {notas}')
+
+contadorBajo = 0
+contadorAlto = 0
+for elemento in notas:
+    if(elemento >= 6):
+        contadorAlto += 1
+    else:
+        contadorBajo += 1
+        
+print(f'\033[1;32mNOTAS APROBADAS: \033[m{contadorAlto} notas.')
+print(f'\033[1;33mNOTAS REPROBADAS: \033[m{contadorBajo} notas.')
+
+
+# EL CÓDIGO \033[m 
+# AGREGA COLOR AL PRINT DE LA TERMINAL.
+# \033[1;33m -> significa 1: bold // 33: texto amarillo
 
