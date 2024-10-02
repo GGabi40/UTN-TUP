@@ -62,3 +62,7 @@ print('-'*10)
 for i, persona in enumerate(personas,start=1):
     print(f'El valor de i: {i}')
     print(persona)
+
+
+
+# MAP

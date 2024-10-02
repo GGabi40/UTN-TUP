@@ -114,6 +114,7 @@ def validarFecha(dia, mes, año):
 validarFecha(dia, mes, año)
 
 
+# ----------------------
 
 """ EJERCICIO.
 Función que recibe dos números y devuelve el mayor, o un mensaje si son iguales
@@ -139,6 +140,7 @@ def comparar_numeros():
 comparar_numeros()
 
 
+# ----------------------
 
 """ EJERCICIO.
 Confeccionar una función que le enviemos como parámetro 
@@ -152,3 +154,37 @@ def superficie(lado):
     return resultado
 
 print(f'La superficie del cuadrado con {lado} cm es: {superficie(lado)}')
+
+
+# ----------------------
+
+""" EJERCICIO.
+Escribir un programa que tenga una lista de palabras. 
+Primero, utiliza map con una función lambda para convertir todas 
+las palabras a mayúsculas. Luego, utiliza map con una función definida 
+para obtener la longitud de cada palabra.
+
+Instrucciones:
+[OK] - Crea una lista con al menos 5 palabras.
+[OK] - Usa map con una función lambda para convertir todas las palabras a mayúsculas.
+[OK] - Crea una función llamada longitud_palabra que reciba una palabra y devuelva su longitud.
+[OK] - Usa map con la función longitud_palabra para obtener la longitud de cada palabra de la lista original.
+[OK] - Muestra los resultados en la consola.
+"""
+
+palabras = ["hola", "mundo", "python", "programacion", "codigo"]
+
+
+ListaMayuscula = list(map(
+    lambda palabra: palabra.upper(), palabras
+))
+
+def longitudPalabra(palabra):
+    return len(palabra)
+
+#                 map(funcion,        iterable)
+longitudes = list(map(longitudPalabra, palabras))
+
+
+print(f'Palabras en mayuscula: {ListaMayuscula}')
+print(f'Longitud de palabras: {longitudes}')
