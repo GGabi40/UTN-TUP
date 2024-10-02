@@ -1,0 +1,39 @@
+# -- Funciones | Definición
+
+# Ej 1.
+# 1. Definir función:
+def suma(a,b):
+    s = a+b
+    print('Suma = ', s)
+
+# 2. Llamarla
+suma(3, 4)
+
+# ----------------------
+
+# Ej 2.
+def potencia(base, exponente):
+    p = base ** exponente
+    print(f'Potencia = {p}')
+
+potencia(2,2)
+
+# ----------------------
+
+# Ej 3.
+
+# Si en mi definición de la función hago:
+def ejemplo(valor1, valor2=0):
+    print(valor1,valor2)
+    # marco un valor por defecto de valor2 como 0,
+    # si no pongo un argumento para valor2, el valor2 por defecto es 0.
+
+ejemplo(1)
+
+# ----------------------
+
+# Ej 4.
+def potencia2(base, exponente):
+    return base**exponente
+
+print(potencia2(2,3))
