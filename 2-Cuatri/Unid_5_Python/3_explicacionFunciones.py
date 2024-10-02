@@ -37,3 +37,13 @@ def potencia2(base, exponente):
     return base**exponente
 
 print(potencia2(2,3))
+
+# ----------------------
+
+# Ej 5.
+
+def resta(num1, num2):
+    return num1 - num2
+
+resultado = resta(5, 2)
+print(f'El resultado es: {resultado}')
