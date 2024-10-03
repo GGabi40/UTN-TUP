@@ -64,5 +64,30 @@ for i, persona in enumerate(personas,start=1):
     print(persona)
 
 
+# ----------- #
+# FILTER
 
-# MAP
+lista = range(-3,10)
+
+def esPositivo(el):
+    if el > 0:
+        return True
+    elif el < 0:
+        return False
+
+
+lista_filtrada = list(filter(esPositivo, lista))
+
+print(lista_filtrada)
+
+# -- Otra alternativa:
+
+lista = range(-3,10)
+
+filtrado = list(filter(
+    lambda x: x > 0,
+    lista
+))
+
+print(f'Filtrado con Funcion: {lista_filtrada}')
+print(f'Filtrado con Anonimo: {filtrado}')
