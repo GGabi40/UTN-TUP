@@ -82,9 +82,35 @@ print(f'Resultado con -1 {resultado[-1]}')
 # Ejercicio 148: Encontrar el mínimo y el máximo de 
 # una lista sin usar funciones existentes.
 
+lista = range(0,10)
+
+mayor = lista[0]
+menor = lista[0]
+
+for i in lista:
+    if i > mayor:
+        mayor = lista[i]
+    if i < menor:
+        menor = lista[i]
+
+print(f'El mayor numero de la lista es: {mayor}')
+print(f'El menor numero de la lista es: {menor}')
+
 
 # Ejercicio 150: Comprobar si existe al menos un 
 # producto impar entre los elementos de una lista.
+
+lista = range(0)
+impar = False
+
+for i in lista:
+    if i % 2 != 0:
+        impar = True
+        
+if impar:
+    print('\033[34mHay al menos un producto impar entre los elementos.\033[m')
+else:
+    print('\033[31mNo hay al menos un producto impar entre los elementos.\033[m')
 
 
 # Ejercicio 162: Determinar si la suma de los elementos 
@@ -97,4 +123,3 @@ print(f'Resultado con -1 {resultado[-1]}')
 
 # Ejercicio 251: Obtener los caracteres que 
 # se repiten en una cadena.
-
