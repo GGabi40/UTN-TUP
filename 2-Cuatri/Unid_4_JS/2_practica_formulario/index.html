@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica Formulario | JavaScript</title>
     <style>
+        body {
+            transition: all 1s ease-in-out;
+        }
+
         form, fieldset {
             border-radius: 8px;
             background-color: white;
@@ -14,6 +18,7 @@
             max-width: 400px;
             min-width: 360px;
             gap: 10px;
+            box-shadow: inset 0 0 6px black;
             padding: 10px;
         }
 
@@ -79,15 +84,15 @@
 
             <label for="pais">País</label>
             <select name="pais" id="pais">
-                <option value="0">Seleccionar tu país</option>
-                <option value="1">Argentina</option>
-                <option value="2">Brasil</option>
-                <option value="3">Colombia</option>
-                <option value="4">Ecuador</option>
-                <option value="5">Otro</option>
+                <option value="0" name="pais">Seleccionar tu país</option>
+                <option value="1" name="pais">Argentina</option>
+                <option value="2" name="pais">Brasil</option>
+                <option value="3" name="pais">Colombia</option>
+                <option value="4" name="pais">Ecuador</option>
+                <option value="5" name="pais">Otro</option>
             </select>
 
-            <div class="desaparece">
+            <div id="boxPais">
                 <label for="nombrePais">Nombre del País</label>
                 <input type="text" name="nombrePais" id="nombrePais">
             </div>
