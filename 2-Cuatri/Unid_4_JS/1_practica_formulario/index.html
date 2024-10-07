@@ -21,6 +21,26 @@
         input[type="submit"] {
             margin-top: 30px;
         }
+
+        #respuesta {
+            display: none;
+            padding: 10px;
+            font-size: 12px;
+            color: white;
+            font-weight: 800;
+            border-radius: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            transition: all 0.3s ease-in-out;
+        }
+
+        .correcto {
+            background: green;
+        }
+
+        .error {
+            background: red;
+        }
     </style>
 </head>
 <body>
@@ -41,6 +61,8 @@
             <input type="email" name="mail" id="mail" placeholder="mail@example.com" required>
             <label for="mensaje">Tu mensaje (Hasta 500 caracteres):</label>
             <textarea name="mensaje" id="mensaje"></textarea>
+
+            <div id="respuesta"></div>
     
             <input type="submit" value="Enviar">
         </fieldset>
