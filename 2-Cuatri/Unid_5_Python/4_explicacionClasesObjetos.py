@@ -109,3 +109,10 @@ class Alumno():
 
 alumno1 = Alumno('Bob', 'Esponja', 36, 'Hamburguesas')
 alumno1.habla()
+
+
+
+# Encapsulación
+
+# Setter: permite crear métodos que permiten 
+# modif el valor de un att privado
