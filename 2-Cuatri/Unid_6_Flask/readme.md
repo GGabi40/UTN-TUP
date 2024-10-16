@@ -34,12 +34,11 @@
 
 <h1>Para Ejecutar la Aplicación:</h1>
 <h2>Hacer un archivo app.py con el código:</h2>
-<code>
-from flask import Flask
+<code>from flask import Flask
 
-app = Flask(__name__)
+app = Flask(__name__)</code>
 
-@app.route('/')
+<code>@app.route('/')
 def home():
     return "Hello, Flask!"
 
