@@ -1,0 +1,39 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    gap: 10px;
+}
+
+form input {
+    height: 15px;
+    padding: 6px 8px;
+}
+
+form input[type="submit"] {
+    height: 30px;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+#mensaje {
+    display: none;
+    height: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.correcto {
+    background: green;
+}
+
+.error {
+    background: red;
+}
