@@ -1,3 +1,9 @@
+
+
+# -- CLASE CON MIGUEL --
+
+
+
 #python -m venv venv
 #venv\Scripts\activate
 #pip list

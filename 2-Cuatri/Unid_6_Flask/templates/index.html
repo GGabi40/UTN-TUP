@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <!-- Enlace a Water.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+    <h1>Lista de Contactos</h1>
+
+    <form action="/add" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="mail">Correo electrónico:</label>
+        <input type="email" id="mail" name="mail" required>
+
+        <button type="submit">Agregar Contacto</button>
+    </form>
+
+    <h2>Contactos guardados</h2>
+    <ul>
+        {% for contact in contacts %}
+            <li>
+                {{ contact.name }} - {{ contact.mail }}
+                <a href="/delete/{{ contact.id }}">Eliminar</a>
+            </li>
+        {% else %}
+            <li>No hay contactos guardados.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
