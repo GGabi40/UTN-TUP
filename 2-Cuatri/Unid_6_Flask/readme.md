@@ -8,7 +8,7 @@
 <br>
 
 <p>Después, si estás utilizando <b>Powershell</b>, activar entorno virtual con:</p>
-<code>.\venv\Scripts\activate</code>
+<code>./venv/Scripts/activate</code>
 
 <br>
 
