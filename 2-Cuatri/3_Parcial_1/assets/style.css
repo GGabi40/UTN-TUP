@@ -1,0 +1,57 @@
+body {
+    background-color: #f0f0f0; /* OK - Color suave */
+}
+
+/* color al texto distinto -OK
+tamaño 24px - OK */
+header {
+    background-color: #ffcc00;
+    color: #231b02;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* OK - Margen Superior 20px */
+.descripcion p {
+    margin-top: 20px;
+}
+
+/* 
+OK - Border alrededor de la lista
+OK - Espaciado interno de 10px
+*/
+
+ul {
+    padding: 10px;
+    border: 2px solid #ffcc00;
+    background-color: white;
+}
+
+/* 
+OK - Color de texto de items distinto al cuerpo
+OK - Estilo de los ítems de la lista a circulos
+*/
+ul li {
+    list-style-type: circle;
+    color: #ff6600;
+}
+
+/* 
+OK - Tamaño específico 150X150px
+OK - Border de color
+OK - Esquinas redondeadas
+*/
+img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #ffcc00;
+    border-radius: 10px;
+
+    transition: border-color 0.3s;
+}
+
+/* OK - Cursor cambia el color */
+img:hover {
+    border-color: #ff6600;
+}
