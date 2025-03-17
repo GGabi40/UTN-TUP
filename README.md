@@ -20,5 +20,10 @@
         <li>Python</li>
         <li>Flask</li>
     </ul>
+    <li>Cuatrimestre 
+    <ul>
+        <li>React JS</li>
+        <li>React Native</li>
+    </ul>
     </li>
 </ol>
