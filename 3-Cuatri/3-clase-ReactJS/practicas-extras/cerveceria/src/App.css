@@ -44,3 +44,12 @@ hr {
 .quantity-div {
   font-size: 18px;
 }
+
+form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
