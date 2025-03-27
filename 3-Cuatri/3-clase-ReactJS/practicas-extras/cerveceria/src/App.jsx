@@ -8,9 +8,9 @@ import QuantityStyle from "./components/QuantityStyle";
 
 
 /* Practicas adicionels */
-import AllProducts from "./components/aditional-practice-1/AllProducts";
-import Persons from "./components/aditional-practice-2/Persons";
-import Family from "./components/aditional-practice-3/Family";
+import AllProducts from "./components/additional-practice-1/AllProducts";
+import Persons from "./components/additional-practice-2/Persons";
+import Family from "./components/additional-practice-3/Family";
 import { useState } from "react";
 
 function App() {
