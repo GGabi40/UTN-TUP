@@ -48,7 +48,9 @@ En la carpeta `img-cuaderno`, hay dos imágenes que ilustran cómo los datos via
 ### **1. Enviar un solo dato**
 📌 **Imagen:** [📷 Captura](./img-cuaderno/react-formulario.jpg)  
 🔹 En este caso, el formulario envía una sola pieza de información al padre.
+<img src="./img-cuaderno/react-formulario.jpg" alt="React Formulario" width="600"/>
 
 ### **2. Enviar un objeto con múltiples datos**
 📌 **Imagen:** [📷 Captura](./img-cuaderno/react-formulario-2.jpg)  
 🔹 Aquí, el formulario envía un objeto con varios datos al componente padre.
+<img src="./img-cuaderno/react-formulario-2.jpg" alt="React Formulario" width="600"/>
