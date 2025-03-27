@@ -38,3 +38,17 @@ Elegir:
     - **pages/** -> Páginas principales de la aplicación
     - **styles/** -> Archivos CSS o SCSS para estilos
  - **.eslintrc.cjs** -> Configuración de ESLint (opcional)
+
+---
+
+## Envío de información de hijo a padre en React
+
+En la carpeta `img-cuaderno`, hay dos imágenes que ilustran cómo los datos viajan desde un componente hijo a su componente padre.
+
+### **1. Enviar un solo dato**
+📌 **Imagen:** [📷 Captura](./img-cuaderno/react-formulario.png)  
+🔹 En este caso, el formulario envía una sola pieza de información al padre.
+
+### **2. Enviar un objeto con múltiples datos**
+📌 **Imagen:** [📷 Captura](./img-cuaderno/react-formulario-2.png)  
+🔹 Aquí, el formulario envía un objeto con varios datos al componente padre.
