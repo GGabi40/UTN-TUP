@@ -37,12 +37,13 @@ function ChangeDollar({ exchangeRate, setExchangeRate }) {
         </button>
 
         {
-            show && 
+            show &&
             <form onSubmit={handleDollar}>
                 <label>Ingrese la cotización del dólar hoy:</label>
                 <input type="number" min={0} placeholder={exchangeRate} /* onChange={(e) => setExchangeRate(Number(e.target.value))} */ />
                 <input type="submit" value="Enviar" />
             </form>
+            /* estructura equivalente a: if(show) { return <form>... } */
         }
         
     </div>
