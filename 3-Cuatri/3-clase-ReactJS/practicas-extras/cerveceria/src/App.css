@@ -49,10 +49,25 @@ hr {
 }
 
 form {
-  margin: auto;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: center;
   align-items: center;
+
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 8px;
+
+  max-width: 300px;
+}
+
+input {
+  padding: 8px 10px;
+}
+
+.formulario {
+  padding: 30px;
+  margin-bottom: 20px;
 }

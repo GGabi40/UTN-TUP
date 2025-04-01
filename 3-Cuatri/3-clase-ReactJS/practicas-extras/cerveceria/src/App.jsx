@@ -1,5 +1,5 @@
 import "./App.css";
-import beers from "./data/beers.js";
+import initialBeers from "./data/beers.js";
 
 import { useState } from "react";
 
@@ -7,12 +7,25 @@ import { Beer } from "./components/beer/Beer";
 import ChangeDollar from "./components/changeDollar/ChangeDollar";
 import BeerStyle from "./components/BeerStyle";
 import QuantityStyle from "./components/QuantityStyle";
+import NewBeer from "./components/newBeer/NewBeer.jsx";
 
-/* Practicas adicionels */
+/* Practicas adicionales */
 import AdditionalPractices from "./components/additional-practices/AdditionalPractices";
 
 function App() {
   const [exchangeRate, setExchangeRate] = useState(1200);
+  const [beers, setBeers] = useState(initialBeers);
+
+  const handleBeerAdded = (data) => {
+    const beerData = {
+      ...data,
+      id: Math.random().toString()
+    }
+
+    setBeers((prevBeers) => {
+      return [...prevBeers, beerData]
+    })
+  }
 
   return (
     <>
@@ -22,6 +35,8 @@ function App() {
           exchangeRate={exchangeRate}
           setExchangeRate={setExchangeRate}
         />
+
+        <NewBeer onSendBeer={handleBeerAdded} />
 
         <h2>Nuestro menú:</h2>
         <Beer beers={beers} exchangeRate={exchangeRate} />

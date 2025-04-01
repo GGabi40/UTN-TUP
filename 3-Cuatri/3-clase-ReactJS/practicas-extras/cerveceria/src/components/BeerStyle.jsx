@@ -8,15 +8,17 @@ function BeerStyle({ beers }) {
 
   return (
     <div>
-        <h2>Estlos de Cervezas Disponibles:</h2>
-        <div className="beers">
-            {beerStyles.map((style) => {
-                return (
-                    <div key={style} className='card'>
-                        {style}
-                    </div>
-                )
-            })}
+        <div className="styles">
+            <h2>Estlos de Cervezas Disponibles:</h2>
+            <div className="beers">
+                {beerStyles.map((style) => {
+                    return (
+                        <div key={style} className='card'>
+                            {style}
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     </div>
   )

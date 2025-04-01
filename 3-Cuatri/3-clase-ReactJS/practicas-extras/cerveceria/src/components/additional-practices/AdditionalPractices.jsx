@@ -1,8 +1,8 @@
 import React from "react";
 
-import AllProducts from "../../components/additional-practice-1/AllProducts";
-import Persons from "../../components/additional-practice-2/Persons";
-import Family from "../../components/additional-practice-3/Family";
+import AllProducts from "./components/additional-practice-1/AllProducts";
+import Persons from "./components/additional-practice-2/Persons";
+import Family from "./components/additional-practice-3/Family";
 
 function AdditionalPractices() {
   const products = ["table","couch","chair1","chair2"];

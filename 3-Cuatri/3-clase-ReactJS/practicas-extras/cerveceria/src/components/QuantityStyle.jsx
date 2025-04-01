@@ -11,14 +11,16 @@ function QuantityStyle({ beers }) {
 
   return (
     <div>
-        <h2>Cantidad de Cervezas por Estilo:</h2>
-        {
-            Object.entries(count).map(([style, quantity]) => (
-                <div className="quantity-div">
-                    <strong>{style}: </strong> {quantity}
-                </div>
-            ))
-        }
+        <div className="quantity">
+            <h2>Cantidad de Cervezas por Estilo:</h2>
+            {
+                Object.entries(count).map(([style, quantity]) => (
+                    <div className="quantity-div">
+                        <strong>{style}: </strong> {quantity}
+                    </div>
+                ))
+            }
+        </div>
     </div>
   );
 }
