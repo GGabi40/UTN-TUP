@@ -14,7 +14,7 @@ function App() {
     const bookData = {
       ...enteredBook,
       id: Math.random().toString(),
-      bookRating: Array(enteredBook.rating).fill('⭐')
+      bookRating: Array(enteredBook.bookRating).fill('⭐').join('')
     };
 
     //       prev -> Agarra lo previo
