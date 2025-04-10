@@ -1,8 +1,11 @@
+import { useState } from "react";
 import React from "react";
 import { Link } from "react-router";
+import Modal from "../modal/Modal";
 
 const Pelicula = ({ id, title, director, image, rating, time, duration, cine }) => {
   // const formattedDate = date.split('-').reverse().join('/');
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (
     <>
@@ -24,9 +27,16 @@ const Pelicula = ({ id, title, director, image, rating, time, duration, cine }) 
             ))}
       </p>
       <div className="botones">
-        <button className="eliminar">Eliminar</button>
+        <button className="eliminar" onClick={() => setModalIsOpen(true)}>Eliminar</button>
         <Link to={`/detalle/${id}`} className="detalles">Más Detalles</Link>
       </div>
+
+      {/* MODAL */}
+      <Modal 
+        isOpen={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+        contentLabel="Confirmar Eliminación"
+      />
     </>
   );
 };

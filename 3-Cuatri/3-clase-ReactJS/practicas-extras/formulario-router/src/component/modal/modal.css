@@ -1,0 +1,59 @@
+@keyframes show-up {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  } 
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.customOverlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.customModal {
+  animation: show-up 0.5s ease-out;
+  background: #1e1e1e;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 320px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  text-align: center;
+}
+
+.customModal button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.customModal button:hover {
+  background: #ff1f1f;
+}
+
+.customModal button:last-child {
+  background: #555;
+}
+
+.customModal button:last-child:hover {
+  background: #777;
+}
