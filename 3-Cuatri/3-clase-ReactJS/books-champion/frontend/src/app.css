@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-books {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 30px;
+}
+
+Button {
+    margin-bottom: 10px;
+}
+
+Button:hover {
+    cursor: pointer;
+}
+
+Form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input[type="text"], input[type="number"] {
+    display: block;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 10px;
+    width: 80%;
+}
+
+Form Button {
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin-top: 10px;
+}
+
+.card {
+    width: 70%;
+    max-width: 600px;
+    min-width: 400px;
+}
+
+.modal {
+    border: 1px solid gray;
+    padding: 20px;
+    max-height: 150px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    background-color: rgb(48, 48, 48);
+}
