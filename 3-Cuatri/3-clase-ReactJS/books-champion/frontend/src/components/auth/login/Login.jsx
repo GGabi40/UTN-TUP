@@ -1,20 +1,15 @@
 import { useState, useRef } from "react";
 import { Button, Card, Col, Form, FormGroup, Row } from "react-bootstrap";
+import { useNavigate } from "react-router";
 
-const Login = () => {
+const Login = ({ onLogin }) => {
+    const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [errors, setErrors] = useState({ email: false, password: false });
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
-
-    const handleEmailChange = (event) => {
-        setEmail(event.target.value)
-    }
-
-    const handlePasswordChange = (event) => {
-        setPassword(event.target.value)
-    }
+    
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -30,7 +25,11 @@ const Login = () => {
         }
 
         setErrors({ email: false, password: false });
-        alert(`El email ingresado es: ${email} y el password es ${password}`)
+        alert(`El email ingresado es: ${email} y el password es ${password}`);
+
+        // Si esta todo bien: ingresa el login y navega al dashboard
+        onLogin();
+        navigate('/dashboard');
     }
 
     return (
@@ -46,7 +45,7 @@ const Login = () => {
                             required
                             className={errors.email && "border border-danger"}
                             placeholder="Ingresar email"
-                            onChange={handleEmailChange}
+                            onChange={(e) => setEmail(e.target.value)}
                             ref={emailRef}
                             value={email} />
                     </FormGroup>
@@ -56,7 +55,7 @@ const Login = () => {
                             required
                             className={errors.password && "border border-danger"}
                             placeholder="Ingresar contraseña"
-                            onChange={handlePasswordChange}
+                            onChange={(e) => setPassword(e.target.value)}
                             ref={passwordRef}
                             value={password}
                         />

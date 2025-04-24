@@ -25,11 +25,14 @@ function Books({books}) {
     <>
     <BookSearch onSearch={handleSearch} search={search} />
 
-    <div className="container-books">
-    {
-      filteredBooks.length ? filteredBooks : <p>No se encontraron libros.</p>
-    }
+    <div className="container mt-4">
+      <div className="row gy-4">
+        {
+          filteredBooks.length ? filteredBooks : <p>No se encontraron libros.</p>
+        }
+        </div>
     </div>
+    
     </>
   )
 }
