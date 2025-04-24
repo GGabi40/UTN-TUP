@@ -1,10 +1,16 @@
 import express from 'express';
+import cors from 'cors';
+
 import { PORT } from './config.js';
 import sequelize from './db.js';
 import booksRoutes from './routes/books.routes.js';
 import './models/BooksModel.js';
 
 const app = express();
+
+app.use(cors({
+    origin: 'http://localhost:5173' // config de cors
+}));
 
 try {
     await sequelize.authenticate();

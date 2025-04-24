@@ -13,11 +13,12 @@ function Books({books}) {
       .map((book, index) => (
         <BookItem 
           key={index}
-          bookTitle={book.bookTitle}
-          author={book.bookAuthor}
-          rating={book.bookRating}
+          bookTitle={book.title}
+          author={book.author}
+          rating={book.rating}
           pageCount={book.pageCount}
           imageUrl={book.imageUrl}
+          summary={book.summary}
         />
       ))
 

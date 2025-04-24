@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import NewBook from "../newBook/NewBook";
 import Books from "../books/Books";
-import initialBooks from '../../data/books'
 
 const Dashboard = () => {
-  const [books, setBooks] = useState(initialBooks);
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/books')
+    .then(res => res.json())
+    .then(garabato => setBooks([...garabato])) // data hace referencia a res.json() - puede ser cualquier nombre, como papaFrita
+    .catch(err => console.log(err))
+  }, []);
 
   // Esta función viene del componente "NewBook"
   const handleBookAdded = (enteredBook) => {

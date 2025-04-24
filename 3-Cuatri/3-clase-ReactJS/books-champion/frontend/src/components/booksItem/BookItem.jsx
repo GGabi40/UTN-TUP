@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import ModalDelete from "../modal/ModalDelete";
 
-function BookItem({ bookTitle, author, rating, pageCount, imageUrl }) {
+function BookItem({ bookTitle, author, rating, pageCount, imageUrl, summary }) {
   const [title, setTitle] = useState(bookTitle);
   const [show, setShow] = useState(false);
 
@@ -35,6 +35,7 @@ function BookItem({ bookTitle, author, rating, pageCount, imageUrl }) {
             <Card.Subtitle>{author}</Card.Subtitle>
             <div>{rating} Estrellas</div>
             <p>{pageCount} páginas</p>
+            <p>{summary}</p>
 
             {/* Button -> Componente de bootstrap, onclick llama a la función handleTitle */}
             <Button onClick={handleTitle}>Actualizar Título</Button>
