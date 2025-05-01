@@ -1,0 +1,142 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+li:hover {
+  background-color: rgb(48, 48, 48);
+  transform: scale(1.02);
+}
+
+.li-task {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 10px;
+  margin-bottom: 1rem;
+  margin: auto;
+}
+
+form input[type="text"] {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.filter-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.filter-container button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter-container button.activo {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+
+.form-login, .register-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-login input[type="email"],
+.form-login input[type="password"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.form-login input[type="submit"],
+.register-form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar-links {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-links:hover {
+  color: #00bcd4;
+}
+
+.navbar-email {
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+.error-detected {
+  border: 1px solid red;
+}
